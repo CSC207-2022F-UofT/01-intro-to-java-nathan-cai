@@ -100,7 +100,9 @@ public class Basics {
          * Current count: 1
          * Current count: 0
          */
-
+        for (int i = 0; i <= 10; i++) {
+            System.out.println(i);
+        }
 
     }
 
@@ -144,6 +146,9 @@ public class Basics {
         StringBuilder ret = new StringBuilder();
 
         // Fill in the rest of the body here
+        for (String a : to_split.split(" ")) {
+            ret.append(a.charAt(0));
+        }
 
         return ret.toString();
     }
